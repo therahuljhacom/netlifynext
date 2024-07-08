@@ -1,0 +1,208 @@
+.topbanner {
+    background: linear-gradient(to bottom, #243341, #602945);
+    padding-top: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.topbanner::after {
+    content: '';
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, rgba(11, 17, 23, 1) 0%, rgba(19, 28, 39, 0.6) 50%, rgba(37, 33, 46, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pattern {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.heading {
+    margin-bottom: 30px;
+}
+
+.subHeading {
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 300;
+}
+
+.bannerBtn {
+    all: unset;
+}
+
+.bannerBtn button {
+    background-image: linear-gradient(145deg, #F58CB8 0%, #9FE2F0 100%);
+    color: var(--white);
+    padding: 15px 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.left {
+    width: 60%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.workflowImage {
+    width: 50%;
+    height: 500px;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.chatBox {
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.chatBox>img {
+    width: 50%;
+    margin-bottom: -10px;
+    margin-left: -5px;
+    flex: 1 1 50%;
+    object-fit: contain;
+    object-position: bottom;
+    z-index: -1;
+}
+
+
+/* _________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .topbanner {
+        padding-top: 100px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .subHeading {
+        margin-bottom: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left,
+    .chatBox {
+        padding-right: 0;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+    .workflowImage {
+        width: 100%;
+        height: 300px;
+    }
+
+    .bannerBtn button {
+        padding: 10px 20px;
+    }
+
+    .chatBox {
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Styles for small devices */
+    .topbanner {
+        padding-top: 100px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .subHeading {
+        margin-bottom: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left,
+    .chatBox {
+        width: 100%;
+    }
+
+    .workflowImage {
+        width: 100%;
+        height: 300px;
+    }
+
+    .bannerBtn button {
+        padding: 10px 20px;
+    }
+
+    .chatBox {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for medium devices */
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .workflowImage {
+        width: 100%;
+        height: 300px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .chatBox {
+        width: 100%;
+        padding-left: 0;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Styles for large devices */
+    .left {
+        width: 50%;
+    }
+
+    .chatBox {
+        padding-left: 0;
+    }
+}

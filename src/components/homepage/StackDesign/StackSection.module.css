@@ -1,0 +1,358 @@
+.stack-section {
+    padding-bottom: 40px;
+}
+
+.stack-content {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.stack-content .stackSubHeading {
+    padding-top: 30px;
+    color: var(--white);
+}
+
+#cards {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards), var(--cardHeight));
+    gap: var(--cardMargin);
+    /* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
+    margin-bottom: var(--cardMargin);
+    padding-top: 30px;
+}
+
+#card1 {
+    --index: 1;
+}
+
+#card2 {
+    --index: 2;
+}
+
+#card3 {
+    --index: 3;
+}
+
+#card4 {
+    --index: 4;
+}
+
+/* #card5 {
+    --index: 5;
+} */
+
+#card5 {
+    --index: 5;
+}
+
+.card {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+.card-body {
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    height: var(--cardHeight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    border-radius: 20px;
+    border: 2px solid #FFF;
+    background: linear-gradient(106deg, #FFD6E7 1.4%, #FFF5F9 100%);
+    position: relative;
+}
+
+.card-body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(106deg, #FFD6E7 1.4%, #FFF5F9 100%), url('/assets/pattern.webp');
+    background-blend-mode: color;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+/* _______________________________________________________________ */
+
+
+.stack-section .left {
+    width: 45%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    position: relative;
+    flex-direction: column;
+}
+
+.stack-section .right {
+    width: 55%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* .stack-section .right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+} */
+.stack-section .right video{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+}
+.stack-section .right::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.stack-section .left .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid #991E52;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack-section .left .icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 30px;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#cards .stackSubHeading {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.card-link a {
+    color: #BF2E6B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    padding-top: 30px;
+    display: inline-block;
+}
+#card2 .card-body {
+    background: linear-gradient(106deg, #ffffff 1.4%, #EDCFFF 100%);
+}
+#card3 .card-body {
+    background: linear-gradient(106deg, #FFF5C0 1.4%, #FFFEFB 100%);
+}
+
+#card4 .card-body {
+    background: linear-gradient(106deg, #E1FFD0 1.4%, #F0FFE8 100%);
+}
+
+/* #card5 .card-body {
+    background: linear-gradient(106deg, #D0E7FF 1.4%, #F7FBFF 100%);
+} */
+
+#card5 .card-body {
+    background: linear-gradient(106deg, #B3FFEF 1.4%, #F3FFFC 100%);
+}
+#card2 .left .icon {
+    border: 1px solid #A020F0;
+}
+#card3 .left .icon {
+    border: 1px solid #A48A00;
+}
+
+#card4 .left .icon {
+    border: 1px solid #528932;
+}
+
+/* #card5 .left .icon {
+    border: 1px solid #3A70A4;
+} */
+
+#card5 .left .icon {
+    border: 1px solid #008368;
+}
+#card2 .card-link a {
+    color: #A020F0;
+}
+#card3 .card-link a {
+    color: #A48A00;
+}
+
+#card4 .card-link a {
+    color: #528932;
+}
+
+/* #card5 .card-link a {
+    color: #3A70A4;
+} */
+
+#card5 .card-link a {
+    color: #008368;
+}
+
+
+/* _______________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .stack-section:root {
+        --cardHeight: auto;
+        --cardMargin: 0;
+        --cardTopPadding: 10px;
+    }
+
+    .stack-section {
+        padding: 50px 0;
+    }
+
+    .stack-content {
+        width: 100%;
+    }
+
+    .stack-content .stackSubHeading {
+        padding-top: 20px;
+    }
+
+    .card-body {
+        display: block;
+    }
+
+    .card-body .left {
+        width: 100%;
+        height: 60%;
+        padding: 10px;
+    }
+
+    .card-body .right {
+        width: 100%;
+        height: 40%;
+    }
+
+    .card-title {
+        padding: 15px 0;
+        font-size: 25px;
+    }
+
+    .card-link a {
+        padding: 10px 0;
+    }
+
+    #cards {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-link a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+
+    /* Styles for extra small devices */
+    .stack-section:root {
+        --cardHeight: auto;
+        --cardMargin: 0;
+        --cardTopPadding: 10px;
+    }
+
+    .stack-section {
+        padding: 50px 0;
+    }
+
+    .stack-content {
+        width: 100%;
+    }
+
+    .stack-content .stackSubHeading {
+        padding-top: 20px;
+    }
+
+    .card-body {
+        display: block;
+    }
+
+    .card-body .left {
+        width: 100%;
+        height: 60%;
+        padding: 10px;
+    }
+
+    .card-body .right {
+        width: 100%;
+        height: 40%;
+    }
+
+    .card-title {
+        padding: 15px 0;
+        font-size: 25px;
+    }
+
+    .card-link a {
+        padding: 10px 0;
+    }
+
+    #cards {
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-link a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for medium devices */
+    .stack-section .left {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}

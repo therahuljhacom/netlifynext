@@ -1,0 +1,156 @@
+.business {
+    padding: 100px 0;
+    background: linear-gradient(106deg, #fff 1.4%, #fff 100%);
+    position: relative;
+
+}
+
+.business::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(106deg, #fff 1.4%, #fff 100%), url('/assets/pattern.webp');
+    background-blend-mode: color;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+
+.business-content {
+    border-radius: 25px;
+    /* background: linear-gradient(297deg, #353535 16.49%, #151521 61.11%), linear-gradient(96deg, #243341 8.24%, #602945 102.14%), linear-gradient(128deg, #F58CB8 0%, #9FE2F0 100%), #FFF; */
+    background: linear-gradient(143deg, #243341, #602945);
+    box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;
+}
+
+.business-content::before {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/business-pattern1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+
+.business-content::after {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/business-pattern2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.business .business-stack-imgs {
+    margin-bottom: 30px;
+}
+
+.business .business-stack-imgs img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-right: -10px;
+}
+
+.business .bus-cont {
+    width: 70%;
+    margin: auto;
+}
+
+.business .bus-cont .bus-sub-heading {
+    margin: 30px 0;
+    color: var(--white);
+}
+
+.business-btn button {
+    border: none;
+    padding: 15px 20px;
+    color: var(--white);
+    border-radius: 80px;
+    background: linear-gradient(128deg, #F58CB8 0%, #9FE2F0 100%), #FFF;
+    box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.business-btn a:first-child button {
+    margin-right: 10px;
+}
+
+.business-btn a:last-child button {
+    border: 1px solid #FFF;
+    background: transparent;
+    color: var(--white);
+}
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .business {
+        padding: 50px 0;
+    }
+
+    .business-content {
+        padding: 40px 30px;
+    }
+
+    .business .bus-cont {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .business .bus-cont .bus-sub-heading {
+        margin: 20px 0;
+    }
+
+    .business-btn button {
+        padding: 8px 15px;
+    }
+
+    .business-content::after {
+        width: 100px;
+        height: 100px;
+        top: 0;
+        right: 0;
+    }
+
+    .business-content::before {
+        height: 100px;
+        width: 100px;
+        bottom: 0;
+        left: 0;
+    }
+    .business .business-stack-imgs img{
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}

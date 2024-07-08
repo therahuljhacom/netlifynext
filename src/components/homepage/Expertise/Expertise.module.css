@@ -1,0 +1,137 @@
+.expertise {
+    padding: 100px 0;
+}
+
+.expertise-content {
+    text-align: center;
+}
+
+.expertise-content .expertise-heading {
+    color: var(--primary-color);
+}
+
+.expertise-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.expertise-card {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.expertise-card .exp-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.expertise-card .exp-content {
+    text-align: left;
+    padding-right: 20px;
+}
+
+.expertise-card .exp-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.expertise-card .exp-text {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+}
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .expertise {
+        padding: 50px 0;
+    }
+
+    .expertise .wrapper {
+        padding-right: 0;
+    }
+
+    .expertise .expertise-heading {
+        padding-right: 16px;
+    }
+
+    .expertise-cards,
+    .expertise-card {
+        display: block;
+    }
+
+    .expertise-cards-container {
+        overflow-x: scroll;
+    }
+
+    .expertise-cards {
+        all: unset;
+        display: flex;
+        width: 500%;
+    }
+
+    .expertise-card {
+        margin-top: 16px;
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    .expertise-card .exp-content {
+        padding-right: 0;
+    }
+
+    .expertise-card .exp-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .expertise-card .exp-text {
+        font-size: 14px;
+    }
+
+    .expertise-card .exp-img img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+    .expertise-cards{
+        grid-template-columns: 1fr;
+    }
+    .expertise-card{
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices */
+    .expertise-cards{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+    .expertise-card .exp-img img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}

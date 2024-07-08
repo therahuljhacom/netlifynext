@@ -1,0 +1,138 @@
+.topBanner {
+    background-image: url('/assets/about-banner.png');
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    position: relative;
+    padding-bottom: 500px;
+}
+
+.topBanner::before {
+    content: '';
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #25212E 0%, rgba(22, 22, 22, 0.00) 100%);
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.mainHeading,
+.subHeading {
+    color: var(--white);
+}
+
+.subHeading {
+    margin-top: 30px;
+}
+
+.bannerBtn {
+    background-image: linear-gradient(145deg, #F58CB8 0%, #9FE2F0 100%);
+    color: var(--white);
+    padding: 15px 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+/* 
+.content::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+} */
+
+
+
+/* _________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .topBanner {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .subHeading {
+        margin-top: 20px;
+    }
+
+    .bannerBtn {
+        margin-top: 20px;
+        padding: 10px 25px;
+    }
+
+    .topBanner::before {
+        content: '';
+        width: 100%;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, #25212E 0%, rgba(22, 22, 22, 0.00) 100%);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Styles for small devices */
+    .topBanner {
+        padding-top: 100px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .subHeading {
+        margin-top: 20px;
+    }
+
+    .bannerBtn {
+        padding: 10px 25px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for medium devices */
+    .topBanner {
+        padding-top: 100px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .subHeading {
+        margin-top: 20px;
+    }
+
+    .bannerBtn {
+        padding: 10px 25px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}

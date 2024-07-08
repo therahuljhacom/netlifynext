@@ -1,0 +1,170 @@
+.technology {
+    background: url('/assets/technology-banner-opti.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.technology::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    background: linear-gradient(339deg, rgba(0, 0, 0, 0.00) 20.14%, #090909 84.82%);
+}
+
+.tech-content {
+    position: relative;
+    text-align: center;
+}
+
+.tech-cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.border-card {
+    background: linear-gradient(to left, #B1D1E5, #E998C0);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.border-card .tech-card {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    padding: 30px;
+    text-align: left;
+}
+
+.tech-image {
+    padding-bottom: 20px;
+}
+
+.tech-image img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    object-position: left;
+}
+
+.tech-title {
+    color: #1D1D1D;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.tech-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to left, #B1D1E5, #E998C0);
+    border-radius: 10px;
+}
+
+.tech-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* __________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */        
+    .technology {
+        padding: 50px 0;
+        background: url('/assets/technology-banner-phone-opti.webp');
+    }
+
+    .technology .wrapper {
+        padding-right: 0;
+    }
+
+    .technology .tech-heading {
+        padding-right: 16px;
+    }
+
+    .border-card .tech-card {
+        padding: 10px;
+    }
+
+    .tech-cards-container {
+        overflow-x: scroll;
+    }
+
+    .tech-cards {
+        all: unset;
+        margin-top: 20px;
+        display: flex;
+        width: 500%;
+    }
+
+    .tech-image {
+        padding-bottom: 0px;
+    }
+
+    .tech-image img {
+        width: 80px;
+        height: 40px;
+    }
+
+    .tech-title {
+        font-size: 18px;
+    }
+
+    .tech-text {
+        line-height: 1.3;
+    }
+
+    .tech-title::before {
+        width: 40px;
+    }
+
+    .border-card {
+        padding: 3px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+    .tech-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices */
+    .tech-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+    .tech-cards{
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}

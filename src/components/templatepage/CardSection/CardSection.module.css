@@ -1,0 +1,41 @@
+.cardSection {
+    padding-bottom: 100px;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.boxes a{
+    all: unset;
+}
+
+.box {
+    background: white;
+    box-shadow: 0 1px 1px rgba(51, 64, 94, .08), 0 2px 2px 1px rgba(51, 64, 94, .08);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.boxContent {
+    padding: 30px;
+}
+
+.boxTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.boxPara {
+    color: grey;
+}

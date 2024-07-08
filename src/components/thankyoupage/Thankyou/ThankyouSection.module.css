@@ -1,0 +1,61 @@
+.thankyou-section {
+    padding: 200px 0;
+    background: linear-gradient(to bottom, #243341, #602945);
+    padding-top: 200px;
+}
+
+.thankyou-section .thankyou-content{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.thankyou-section .thankyou-heading, .thankyou-section .thankyou-heading{
+    text-align: center;
+}
+.thankyou-content button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: underline;
+    background: linear-gradient(to left, #B1D1E5, #E998C0);
+    font-size: 18px;
+    color: white;
+}
+.form-heading{
+    color: var(--white);
+    font-size: 30px;
+    margin: 20px 0;
+}
+@media (max-width: 576px) {
+    /* Styles for extra small devices */
+    .thankyou-section .thankyou-content{
+        width: 100%;
+    }
+    .thankyou-section{
+        padding: 100px 0;
+    }
+    .form-heading{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .thankyou-content button{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Styles for small devices */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Styles for medium devices */
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* Styles for large devices */
+}
+
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}

@@ -1,0 +1,155 @@
+.whatwedo {
+    padding-bottom: 100px;
+}
+
+.heading {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.subHeading {
+    font-weight: 400;
+}
+
+.content {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layoutbox {
+    width: 50%;
+    height: 100%;
+}
+
+.layoutbox .mainImage {
+    width: 100%;
+    object-fit: contain;
+}
+
+.cards {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    box-shadow: 0 10px 40px 4px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.cardHeading {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cardSubHeading {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.cardContent {
+    padding-left: 20px;
+}
+
+/* _________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .whatwedo {
+        padding: 50px 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .layout {
+        display: block;
+    }
+
+    .layoutbox {
+        width: 100%;
+    }
+
+    .mainImage {
+        height: 350px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+        .whatwedo {
+        padding: 50px 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .layout {
+        display: block;
+    }
+
+    .layoutbox {
+        width: 100%;
+    }
+
+    .mainImage {
+        height: 350px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices */
+        .whatwedo {
+        padding: 50px 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .layout {
+        display: block;
+    }
+
+    .layoutbox {
+        width: 100%;
+    }
+
+    .mainImage {
+        height: 350px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}

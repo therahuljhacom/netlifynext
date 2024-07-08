@@ -1,0 +1,290 @@
+.industries {
+    padding: 100px 0;
+    background: linear-gradient(-159deg, #01011C 0%, #0C0C4D 100%);
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subHeading {
+    color: var(--white);
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabsContainer {
+    display: flex;
+    gap: 15px;
+}
+
+.tabs {
+    background-color: white;
+    width: 30%;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.tabs li {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    gap: 10px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+}
+
+.tabs li:last-child {
+    border-bottom: none;
+}
+
+.tabs li.active {
+    background: linear-gradient(-80deg, #aed2e6, #f58cb8);
+    color: white;
+    margin-right: -25px;
+    border-bottom: none;
+}
+
+.tabs li.active:first-child {
+    border-top-left-radius: 4px;
+}
+
+.tabs li img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.tabs li.active img {
+    filter: brightness(0) invert(1);
+    border-bottom: none;
+}
+
+.tabContents {
+    width: 70%;
+}
+
+.tabContent {
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+}
+
+.tabContent.active {
+    display: block;
+}
+
+.tabContent img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tabHeading {
+    padding: 0 20px;
+    font-size: 25px;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.tabSubHeading {
+    padding: 0 20px;
+    color: gray;
+}
+
+.buttonContainer {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    max-width: 800px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+.buttonContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background: linear-gradient(to left, #aed2e6, #f58cb8) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(red 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.buttonContainer:hover button {
+    background-image: linear-gradient(to left, #aed2e6, #f58cb8);
+    border-radius: 50px;
+    color: white;
+}
+
+.buttonContainer button {
+    padding: 10px 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #F58CB8;
+}
+
+
+/* _________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .industries {
+        padding: 50px 0;
+    }
+
+    .subHeading {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tabsContainer {
+        display: block;
+    }
+
+    .tabs .tabScroll {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .tabs {
+        overflow-x: scroll;
+        width: 100%;
+        background: transparent;
+    }
+
+    .tabs li {
+        padding: 20px 20px;
+        gap: 0;
+        font-weight: 400;
+        font-size: 16px;
+        background: white;
+        white-space: nowrap;
+    }
+
+    .tabs li:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .tabs li:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .tabs li.active {
+        margin-right: 0;
+    }
+
+    .tabContents {
+        width: 100%;
+    }
+
+    .tabHeading {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Styles for small devices */
+    .industries {
+        padding: 50px 0;
+    }
+
+    .subHeading {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .tabsContainer {
+        display: block;
+    }
+
+    .tabs .tabScroll {
+        width: 100%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .tabs {
+        overflow-x: scroll;
+        width: 100%;
+        background: transparent;
+    }
+
+    .tabs li {
+        padding: 20px 20px;
+        gap: 0;
+        font-weight: 400;
+        font-size: 16px;
+        background: white;
+        white-space: nowrap;
+    }
+
+    .tabs li:first-child {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .tabs li:last-child {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .tabs li.active {
+        margin-right: 0;
+    }
+
+    .tabContents {
+        width: 100%;
+    }
+
+    .tabHeading {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for medium devices */
+    .tabs {
+        width: 45%;
+    }
+
+    .tabs li {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}

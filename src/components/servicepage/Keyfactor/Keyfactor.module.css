@@ -1,0 +1,116 @@
+.keyfactor {
+    padding: 100px 0;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+.content{
+    width: 80%;
+    margin: auto;
+}
+.keyfactorTitle {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: linear-gradient(to right, #ff73ad, #9dd3f0);
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heading {
+    color: var(--primary-color);
+    margin: 30px 0;
+}
+.subHeading{
+    font-weight: 400;
+}
+
+.keyfactorSlider{
+    margin-top: 30px;
+}
+.box{
+    height: 280px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    justify-items: center;
+    text-align: center;
+}
+.boxTitle{
+    font-weight: 600;
+    margin-top: 20px;
+    width: 50%;
+    line-height: 1.4;
+}
+
+
+/* _________________________________________________ */
+
+@media (max-width: 576px) {
+    /* Styles for extra small devices */
+    .keyfactor{
+        padding: 50px 0;
+        padding-bottom: 65px;
+    }
+    .content{
+        width: 100%;
+    }
+    .heading{
+        margin: 20px 0;
+    }
+    .keyfactorSlider{
+        margin-top: 20px;
+    }
+    .icon img{
+        width: 50px;
+        height: 50px;
+    }
+    .box{
+        height: 200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small devices */
+    .keyfactor{
+        padding: 50px 0;
+    }
+    .content{
+        width: 100%;
+    }
+    .heading{
+        margin: 20px 0;
+    }
+    .keyfactorSlider{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium devices */
+    .keyfactor{
+        padding: 50px 0;
+        padding-bottom: 65px;
+    }
+    .content{
+        width: 100%;
+    }
+    .heading{
+        margin: 30px 0;
+    }
+    .keyfactorSlider{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}

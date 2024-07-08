@@ -1,0 +1,66 @@
+.topBanner {
+    background: linear-gradient(to bottom, #243341, #602945);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.mainHeading {
+    color: var(--white);
+}
+
+.subHeading {
+    margin-top: 30px;
+}
+/* _________________________________________________ */
+
+@media (max-width: 576px) {
+
+    /* Styles for extra small devices */
+    .topBanner {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /* Styles for small devices */
+    .topBanner {
+        padding-top: 100px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles for medium devices */
+    .topBanner {
+        padding-top: 150px;
+    }
+
+    .content {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for large devices */
+}
